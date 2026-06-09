@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="AK Professional Service รับติดตั้งพัดลม งานระบบไฟ ห้องคอมพิวเตอร์ จัดส่งอุปกรณ์ให้โรงเรียน พร้อมขายส่งคอมพิวเตอร์ และบริการเลือกสเปคคอมพิวเตอร์ครบทุกชิ้นส่วน CPU Intel/AMD 2022-2026, GPU NVIDIA/AMD">
+    <title>AK Professional | เลือกสเปคคอมครบ CPU Intel/AMD 2022-2026 + GPU</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Prompt:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0A1927; --secondary: #2A7F6E; --accent: #D4AF37;
+            --gray-50: #F9FBFD; --gray-200: #E2E8F0; --gray-500: #64748B;
+            --gray-900: #0F172A; --white: #FFFFFF;
+            --shadow-sm: 0 10px 25px -5px rgba(0,0,0,0.05);
+            --shadow-md: 0 20px 25px -12px rgba(0,0,0,0.1);
+            --gradient-hero: linear-gradient(135deg, #0A1927 0%, #1A3B32 100%);
+        }
+        body { font-family: 'Inter', 'Prompt', sans-serif; background: var(--gray-50); color: var(--gray-900); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 2rem; }
+        
+        /* Language Switcher */
+        .lang-switch { position: fixed; top: 1rem; right: 1rem; z-index: 1001; background: white; border-radius: 50px; padding: 0.3rem; display: flex; gap: 0.2rem; box-shadow: var(--shadow-sm); }
+        .lang-btn { background: none; border: none; padding: 0.4rem 1rem; border-radius: 40px; cursor: pointer; font-weight: 600; }
+        .lang-btn.active { background: var(--secondary); color: white; }
+        
+        /* Navbar */
+        .navbar { background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); padding: 0.8rem 0; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .nav-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+        .logo-area { display: flex; align-items: center; gap: 12px; }
+        .logo-img { height: 52px; background: white; border-radius: 14px; padding: 5px; }
+        .logo-text h3 { font-size: 1rem; font-weight: 700; background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .nav-links { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; color: var(--gray-900); font-weight: 500; transition: 0.2s; }
+        .nav-links a:hover { color: var(--secondary); }
+        .btn-primary { background: var(--secondary); color: white; padding: 0.6rem 1.5rem; border-radius: 40px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: 0.2s; }
+        .btn-primary:hover { background: #1E5A73; transform: translateY(-2px); }
+        .btn-accent { background: linear-gradient(135deg, var(--accent), #E5C558); color: var(--primary); padding: 0.8rem 1.8rem; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: 0.2s; }
+        .btn-accent:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(212,175,55,0.3); }
+        
+        /* Hero */
+        .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 3rem; padding: 4rem 0; }
+        .hero-content { flex: 1.2; }
+        .hero-badge { background: rgba(42,127,110,0.1); color: var(--secondary); display: inline-block; padding: 0.3rem 1rem; border-radius: 50px; margin-bottom: 1.5rem; }
+        .hero-content h1 { font-size: 2.8rem; font-weight: 800; line-height: 1.2; }
+        .hero-gradient-text { background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .hero-accent-text { color: var(--accent); border-bottom: 3px solid var(--accent); }
+        .hero-image { flex: 0.9; text-align: center; background: white; padding: 2rem; border-radius: 2.5rem; box-shadow: var(--shadow-md); }
+        .hero-image img { max-width: 180px; }
+        .shopfront-img { width: 100%; max-width: 260px; border-radius: 20px; margin-top: 15px; border: 2px solid var(--accent); transition: 0.3s; }
+        .shopfront-img:hover { transform: scale(1.02); }
+        
+        /* Sections */
+        section { padding: 4rem 0; border-bottom: 1px solid var(--gray-200); }
+        .section-title { font-size: 2rem; font-weight: 700; text-align: center; background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 0.5rem; }
+        .section-sub { text-align: center; color: var(--gray-500); margin-bottom: 2.5rem; }
+        
+        /* Cards */
+        .services-grid, .pcset-grid, .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; }
+        .service-card, .pcset-card, .product-card { background: white; border-radius: 1.5rem; padding: 2rem; text-align: center; transition: 0.3s; border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm); }
+        .service-card:hover, .pcset-card:hover, .product-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-md); border-color: var(--accent); }
+        .service-icon { width: 70px; height: 70px; background: rgba(42,127,110,0.1); border-radius: 30px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; }
+        .service-icon i { font-size: 2rem; color: var(--secondary); }
+        .pcset-img { width: 100%; height: 180px; object-fit: cover; border-radius: 1rem; margin-bottom: 1rem; }
+        .product-icon { font-size: 3rem; background: linear-gradient(135deg, var(--secondary), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 1rem; }
+        
+        /* Spec Form */
+        .spec-section { background: white; border-radius: 1.8rem; padding: 2rem; box-shadow: var(--shadow-md); }
+        .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem; }
+        .spec-item label { font-weight: 700; display: block; margin-bottom: 0.4rem; color: var(--primary); }
+        .spec-item select, .spec-item input { width: 100%; padding: 0.8rem; border: 1px solid var(--gray-200); border-radius: 1rem; background: var(--gray-50); font-family: inherit; }
+        .custom-spec input, .custom-spec textarea { width: 100%; padding: 0.8rem; margin-bottom: 0.8rem; border: 1px solid var(--gray-200); border-radius: 1rem; font-family: inherit; }
+        
+        /* Share Buttons */
+        .share-section { text-align: center; margin: 2rem 0; }
+        .share-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+        .share-btn { padding: 0.7rem 1.5rem; border-radius: 50px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 600; transition: 0.2s; }
+        .share-btn.line { background: #06C755; }
+        .share-btn.facebook { background: #1877F2; }
+        .share-btn:hover { transform: translateY(-3px); filter: brightness(1.05); }
+        
+        /* Contact */
+        .contact-wrapper { display: flex; flex-wrap: wrap; gap: 2rem; }
+        .contact-info, .contact-form { flex: 1; background: white; border-radius: 1.5rem; padding: 2rem; border: 1px solid var(--gray-200); }
+        .social-btn { flex: 1; padding: 0.7rem; border-radius: 0.75rem; text-align: center; text-decoration: none; color: white; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: 0.2s; }
+        .social-btn:hover { transform: translateY(-3px); }
+        .line-btn { background: #06C755; }
+        .msg-btn { background: #0084FF; }
+        .phone-btn { background: var(--secondary); }
+        footer { background: var(--primary); color: white; text-align: center; padding: 2rem; }
+        
+        @media (max-width: 768px) { .container { padding: 0 1rem; } .hero-content h1 { font-size: 1.8rem; } .nav-flex { flex-direction: column; } }
+    </style>
+</head>
+<body>
+
+<div class="lang-switch">
+    <button class="lang-btn active" data-lang="th">🇹🇭 ไทย</button>
+    <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+</div>
+
+<div class="navbar">
+    <div class="container nav-flex">
+        <div class="logo-area">
+            <img class="logo-img" src="https://img2.pic.in.th/unnamed__1_-removebg-preview-1.png" alt="AK Pro">
+            <div class="logo-text"><h3 data-key="company_name">บจก.เอเค โปรเฟสชั่นแนล</h3><p data-key="company_sub">AK Professional Service Co., Ltd.</p></div>
+        </div>
+        <div class="nav-links">
+            <a href="#home" data-key="nav_home">หน้าแรก</a>
+            <a href="#services" data-key="nav_services">บริการ</a>
+            <a href="#pcset" data-key="nav_pcset">คอมเซ็ต</a>
+            <a href="#specform" data-key="nav_spec">เลือกสเปค</a>
+            <a href="#contact" data-key="nav_contact">ติดต่อ</a>
+            <a href="#specform" class="btn-primary"><i class="fas fa-file-invoice"></i> <span data-key="nav_quote">ขอใบเสนอราคา</span></a>
+        </div>
+    </div>
+</div>
+
+<main>
+    <!-- Hero -->
+    <div class="container" id="home">
+        <div class="hero" data-aos="fade-up">
+            <div class="hero-content">
+                <div class="hero-badge" data-key="hero_badge">✨ ครบวงจร มาตรฐานมืออาชีพ</div>
+                <h1><span class="hero-gradient-text" data-key="hero_title_1">รับติดตั้งพัดลม</span><br><span data-key="hero_title_2">งานระบบไฟ </span><span class="hero-accent-text" data-key="hero_title_3"></span><br><span data-key="hero_title_4">สนใจสอบถามรายละเอียดได้ที่ 086 314 1312</span></h1>
+                <p style="margin: 1rem 0; color: var(--gray-500);" data-key="hero_desc">เราครอบคลุมทุกความต้องการ ตั้งแต่ขายส่งอุปกรณ์คอมพิวเตอร์ ไปจนถึงบริการเลือกสเปคคอมพิวเตอร์ครบทุกชิ้นส่วน CPU Intel/AMD ทุกรุ่น 2022-2026 และ GPU NVIDIA/AMD</p>
+                <div class="hero-buttons" style="display: flex; gap: 1rem;">
+                    <a href="#specform" class="btn-accent"><i class="fas fa-desktop"></i> <span data-key="hero_btn_spec">เลือกสเปคคอม</span></a>
+                    <a href="#services" class="btn-primary" style="background: transparent; border: 1px solid var(--secondary); color: var(--secondary); box-shadow: none;"><span data-key="hero_btn_services">บริการทั้งหมด</span></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://img2.pic.in.th/unnamed__1_-removebg-preview-1.png" alt="AK Pro">
+                <img class="shopfront-img" src="https://img2.pic.in.th/da6a9cd493d370159a5611dd2f57046a.png" alt="หน้าร้าน" onerror="this.style.display='none'">
+                <div style="margin-top: 12px;"><i class="fas fa-map-marker-alt"></i> 8MR6+QC8 ต.อุทัย อ.อุทัย อยุธยา 13210</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- บริการ -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title" data-key="services_title">⚙️ บริการของเรา</h2>
+            <p class="section-sub" data-key="services_sub">ติดตั้ง-ออกแบบ-จัดส่ง ครบจบในที่เดียว</p>
+            <div class="services-grid">
+                <div class="service-card"><div class="service-icon"><i class="fas fa-fan"></i></div><h3 data-key="service_fan">ติดตั้งพัดลม</h3><p data-key="service_fan_desc">พัดลม พัดลมดูดอากาศ สำหรับบ้าน สำนักงาน โรงเรียน</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-bolt"></i></div><h3 data-key="service_electrical">งานระบบไฟ</h3><p data-key="service_electrical_desc">เดินสายไฟ เปลี่ยนโคมไฟ ระบบไฟฟ้าแสงสว่าง ปลอดภัย มอก.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-laptop-code"></i></div><h3 data-key="service_computer">งานห้องคอมพิวเตอร์</h3><p data-key="service_computer_desc">ออกแบบ จัดวาง ติดตั้งระบบเครือข่าย เดินสายแลน</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-school"></i></div><h3 data-key="service_school">จัดส่งให้โรงเรียน</h3><p data-key="service_school_desc">ส่งตรงถึงมือครูและนักเรียน อุปกรณ์คอมพิวเตอร์ จอภาพ พัดลม</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- คอมเซ็ตแนะนำ -->
+    <section id="pcset">
+        <div class="container">
+            <h2 class="section-title" data-key="pcset_title">🖥️ คอมเซ็ตแนะนำ</h2>
+            <p class="section-sub" data-key="pcset_sub">เซ็ตคอมพิวเตอร์พร้อมใช้งาน ราคาพิเศษ</p>
+            <div class="pcset-grid">
+                <div class="pcset-card"><img class="pcset-img" src="https://img2.pic.in.th/20190306173749_33178_21_1.webp" alt="PC Set 1" onerror="this.src='https://placehold.co/400x200/2A7F6E/white?text=PC+Set'"><h3 data-key="pcset1">คอมเซ็ต All-in-One</h3><p data-key="pcset1_desc">จอภาพในตัว ประหยัดพื้นที่</p></div>
+                <div class="pcset-card"><img class="pcset-img" src="https://img1.pic.in.th/images/hp-notebook-14-ep1186tu-silver-1-square_medium.jpg" alt="Notebook" onerror="this.src='https://placehold.co/400x200/2A7F6E/white?text=Notebook'"><h3 data-key="pcset2">โน้ตบุ๊ก HP</h3><p data-key="pcset2_desc">ประสิทธิภาพสูง พกพาสะดวก</p></div>
+                <div class="pcset-card"><img class="pcset-img" src="https://img1.pic.in.th/images/00kIuLzpfWuruDOD8NVErFM-1a1fae087daea5d48.webp" alt="PC Set 3" onerror="this.src='https://placehold.co/400x200/2A7F6E/white?text=PC+Set'"><h3 data-key="pcset3">คอมเซ็ตสำหรับโรงเรียน</h3><p data-key="pcset3_desc">ครบชุด พร้อมซอฟต์แวร์ลิขสิทธิ์</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- เลือกสเปคคอมพิวเตอร์ ครบทุกชิ้นส่วน CPU 2022-2026 + GPU -->
+    <section id="specform">
+        <div class="container">
+            <h2 class="section-title" data-key="spec_title">⚙️ เลือกสเปคคอมพิวเตอร์ (ครบทุกชิ้นส่วน)</h2>
+            <p class="section-sub" data-key="spec_sub">เลือกสเปคตามรุ่นจริงที่มีจำหน่าย หรือเขียนสเปคเอง แล้วเราจะเสนอราคาให้ภายใน 24 ชม.</p>
+            <div class="spec-section" data-aos="fade-up">
+                <form action="https://formspree.io/f/YOUR_ENDPOINT" method="POST" id="specForm">
+                    <div class="spec-grid">
+                        <!-- CPU ครบทุกปี 2022-2026 -->
+                        <div class="spec-item"><label data-key="spec_cpu">🧠 CPU (โปรเซสเซอร์)</label>
+                            <select name="cpu">
+                                <option value="">-- เลือก CPU --</option>
+                                <optgroup label="Intel Core รุ่นที่ 12 (Alder Lake) 2022"><option>Intel Core i9-12900K</option><option>Intel Core i7-12700K</option><option>Intel Core i5-12600K</option><option>Intel Core i5-12400F</option><option>Intel Core i3-12100</option><option>Intel Core i3-12100F</option></optgroup>
+                                <optgroup label="Intel Core รุ่นที่ 13 (Raptor Lake) 2023"><option>Intel Core i9-13900K</option><option>Intel Core i7-13700K</option><option>Intel Core i5-13600K</option><option>Intel Core i5-13400F</option><option>Intel Core i3-13100</option><option>Intel Core i3-13100F</option></optgroup>
+                                <optgroup label="Intel Core รุ่นที่ 14 (Raptor Lake Refresh) 2024"><option>Intel Core i9-14900K</option><option>Intel Core i7-14700K</option><option>Intel Core i5-14600K</option><option>Intel Core i5-14400F</option><option>Intel Core i3-14100</option></optgroup>
+                                <optgroup label="Intel Core Ultra (Arrow Lake) 2025"><option>Intel Core Ultra 9 285K</option><option>Intel Core Ultra 7 265K</option><option>Intel Core Ultra 5 245K</option></optgroup>
+                                <optgroup label="Intel Core Ultra (Panther Lake) 2026"><option>Intel Core Ultra 9 395K</option><option>Intel Core Ultra 7 375K</option><option>Intel Core Ultra 5 355K</option></optgroup>
+                                <optgroup label="AMD Ryzen 5000 Series 2022"><option>AMD Ryzen 9 5950X</option><option>AMD Ryzen 7 5800X</option><option>AMD Ryzen 5 5600X</option><option>AMD Ryzen 5 5500</option><option>AMD Ryzen 3 4100</option></optgroup>
+                                <optgroup label="AMD Ryzen 7000 Series 2023"><option>AMD Ryzen 9 7950X</option><option>AMD Ryzen 7 7700X</option><option>AMD Ryzen 5 7600X</option><option>AMD Ryzen 5 7500F</option><option>AMD Ryzen 7 7800X3D</option></optgroup>
+                                <optgroup label="AMD Ryzen 8000 Series 2024"><option>AMD Ryzen 7 8700G</option><option>AMD Ryzen 5 8600G</option></optgroup>
+                                <optgroup label="AMD Ryzen 9000 Series 2025"><option>AMD Ryzen 9 9950X</option><option>AMD Ryzen 7 9700X</option><option>AMD Ryzen 5 9600X</option><option>AMD Ryzen 9 9900X</option></optgroup>
+                                <optgroup label="AMD Ryzen AI (Strix Point) 2026"><option>AMD Ryzen AI 9 395</option><option>AMD Ryzen AI 7 385</option><option>AMD Ryzen AI 5 365</option></optgroup>
+                            </select>
+                        </div>
+
+                        <!-- RAM -->
+                        <div class="spec-item"><label data-key="spec_ram">💾 RAM (หน่วยความจำ)</label>
+                            <select name="ram">
+                                <option value="">-- เลือก RAM --</option><option>8GB DDR4 3200MHz</option><option>16GB DDR4 3200MHz</option><option>32GB DDR4 3200MHz</option><option>64GB DDR4 3200MHz</option>
+                                <option>8GB DDR5 4800MHz</option><option>16GB DDR5 4800MHz</option><option>16GB DDR5 6000MHz</option><option>32GB DDR5 5200MHz</option><option>32GB DDR5 6000MHz</option><option>64GB DDR5 5600MHz</option><option>96GB DDR5 6000MHz</option><option>128GB DDR5 5600MHz</option>
+                            </select>
+                        </div>
+
+                        <!-- Storage -->
+                        <div class="spec-item"><label data-key="spec_storage">💽 SSD / HDD</label>
+                            <select name="storage">
+                                <option value="">-- เลือก Storage --</option>
+                                <optgroup label="SSD NVMe M.2"><option>256GB NVMe SSD</option><option>512GB NVMe SSD</option><option>1TB NVMe SSD</option><option>2TB NVMe SSD</option><option>4TB NVMe SSD</option><option>8TB NVMe SSD</option></optgroup>
+                                <optgroup label="SSD SATA"><option>256GB SATA SSD</option><option>512GB SATA SSD</option><option>1TB SATA SSD</option><option>2TB SATA SSD</option></optgroup>
+                                <optgroup label="HDD"><option>500GB HDD</option><option>1TB HDD</option><option>2TB HDD</option><option>4TB HDD</option><option>8TB HDD</option><option>12TB HDD</option></optgroup>
+                                <optgroup label="SSD+HDD Combo"><option>256GB SSD + 1TB HDD</option><option>512GB SSD + 1TB HDD</option><option>1TB SSD + 2TB HDD</option><option>2TB SSD + 4TB HDD</option><option>4TB SSD + 8TB HDD</option></optgroup>
+                            </select>
+                        </div>
+
+                        <!-- GPU กราฟิกการ์ด ครบทุกซีรี่ส์ -->
+                        <div class="spec-item"><label data-key="spec_gpu">🎮 กราฟิกการ์ด (GPU)</label>
+                            <select name="gpu">
+                                <option value="">-- เลือก GPU --</option>
+                                <optgroup label="NVIDIA GeForce RTX 30 Series"><option>NVIDIA RTX 3050</option><option>NVIDIA RTX 3060</option><option>NVIDIA RTX 3060 Ti</option><option>NVIDIA RTX 3070</option><option>NVIDIA RTX 3070 Ti</option><option>NVIDIA RTX 3080</option><option>NVIDIA RTX 3080 Ti</option><option>NVIDIA RTX 3090</option><option>NVIDIA RTX 3090 Ti</option></optgroup>
+                                <optgroup label="NVIDIA GeForce RTX 40 Series"><option>NVIDIA RTX 4060</option><option>NVIDIA RTX 4060 Ti</option><option>NVIDIA RTX 4070</option><option>NVIDIA RTX 4070 Ti</option><option>NVIDIA RTX 4070 Ti SUPER</option><option>NVIDIA RTX 4080</option><option>NVIDIA RTX 4080 SUPER</option><option>NVIDIA RTX 4090</option><option>NVIDIA RTX 4090 D</option></optgroup>
+                                <optgroup label="NVIDIA GeForce RTX 50 Series (2025-2026)"><option>NVIDIA RTX 5060</option><option>NVIDIA RTX 5060 Ti</option><option>NVIDIA RTX 5070</option><option>NVIDIA RTX 5070 Ti</option><option>NVIDIA RTX 5080</option><option>NVIDIA RTX 5090</option></optgroup>
+                                <optgroup label="AMD Radeon RX 6000 Series"><option>AMD RX 6400</option><option>AMD RX 6500 XT</option><option>AMD RX 6600</option><option>AMD RX 6600 XT</option><option>AMD RX 6650 XT</option><option>AMD RX 6700 XT</option><option>AMD RX 6750 XT</option><option>AMD RX 6800</option><option>AMD RX 6800 XT</option><option>AMD RX 6900 XT</option><option>AMD RX 6950 XT</option></optgroup>
+                                <optgroup label="AMD Radeon RX 7000 Series"><option>AMD RX 7600</option><option>AMD RX 7600 XT</option><option>AMD RX 7700 XT</option><option>AMD RX 7800 XT</option><option>AMD RX 7900 GRE</option><option>AMD RX 7900 XT</option><option>AMD RX 7900 XTX</option></optgroup>
+                                <optgroup label="Onboard / Integrated"><option>Intel UHD Graphics (Onboard)</option><option>AMD Radeon Graphics (Onboard)</option><option>ไม่ต้องการการ์ดจอแยก (ใช้ Onboard)</option></optgroup>
+                            </select>
+                        </div>
+
+                        <!-- เมนบอร์ด -->
+                        <div class="spec-item"><label data-key="spec_motherboard">🔧 เมนบอร์ด</label>
+                            <select name="motherboard">
+                                <option value="">-- เลือกเมนบอร์ด --</option>
+                                <optgroup label="Intel LGA1700"><option>MSI PRO B760M-A</option><option>Gigabyte B760M DS3H</option><option>ASUS TUF B760-PLUS</option><option>MSI MAG B760 TOMAHAWK</option><option>Gigabyte Z790 AORUS ELITE</option><option>ASUS ROG STRIX Z790-E</option><option>MSI MPG Z790 CARBON</option></optgroup>
+                                <optgroup label="Intel LGA1851 (Ultra 200)"><option>ASUS TUF Z890-PLUS</option><option>MSI PRO Z890-A</option><option>Gigabyte Z890 AORUS MASTER</option></optgroup>
+                                <optgroup label="AMD AM5"><option>ASUS TUF B650M-PLUS</option><option>MSI B650M PRO-VDH</option><option>Gigabyte B650 AORUS ELITE</option><option>ASUS ROG STRIX X670E-E</option><option>MSI MPG X670E CARBON</option><option>ASUS ROG CROSSHAIR X670E HERO</option></optgroup>
+                                <optgroup label="AMD AM4"><option>MSI B550M PRO-VDH</option><option>Gigabyte B550M DS3H</option><option>ASUS TUF B550-PLUS</option><option>MSI MAG B550 TOMAHAWK</option></optgroup>
+                            </select>
+                        </div>
+
+                        <!-- Power Supply -->
+                        <div class="spec-item"><label data-key="spec_psu">🔌 พาวเวอร์ซัพพลาย (PSU)</label>
+                            <select name="psu">
+                                <option value="">-- เลือก PSU --</option><option>450W 80+ Bronze</option><option>500W 80+ Bronze</option><option>550W 80+ Bronze</option><option>650W 80+ Bronze</option>
+                                <option>650W 80+ Gold</option><option>750W 80+ Gold</option><option>850W 80+ Gold</option><option>1000W 80+ Gold</option><option>1200W 80+ Gold</option>
+                                <option>1000W 80+ Platinum</option><option>1200W 80+ Platinum</option><option>1600W 80+ Titanium</option>
+                            </select>
+                        </div>
+
+                        <!-- เคส -->
+                        <div class="spec-item"><label data-key="spec_case">🖥️ เคสคอมพิวเตอร์</label>
+                            <select name="case">
+                                <option value="">-- เลือกเคส --</option><option>เคสเล็ก (Micro-ATX)</option><option>เคสกลาง ATX</option><option>เคสใหญ่ Full Tower</option><option>เคสเกมมิ่ง RGB</option><option>เคสสำนักงานเรียบหรู</option><option>เคสพกพา (Mini-ITX)</option>
+                            </select>
+                        </div>
+
+                        <!-- ระบายความร้อน -->
+                        <div class="spec-item"><label data-key="spec_cooler">❄️ ระบบระบายความร้อน</label>
+                            <select name="cooler">
+                                <option value="">-- เลือกระบายความร้อน --</option><option>พัดลม CPU แบบแถมมา</option><option>Air Cooler ต่ำ (Low Profile)</option><option>Air Cooler สูง (ทาวเวอร์)</option>
+                                <option>น้ำ AIO 120mm</option><option>น้ำ AIO 240mm</option><option>น้ำ AIO 280mm</option><option>น้ำ AIO 360mm</option><option>น้ำ AIO 420mm</option><option>ระบบน้ำ Custom Loop</option>
+                            </select>
+                        </div>
+
+                        <!-- จอภาพ -->
+                        <div class="spec-item"><label data-key="spec_monitor">🖥️ จอภาพ</label>
+                            <select name="monitor">
+                                <option value="ไม่มีจอภาพ">ไม่มีจอภาพ</option><option>18.5 นิ้ว HD</option><option>21.5 นิ้ว Full HD</option><option>24 นิ้ว Full HD 75Hz</option>
+                                <option>24 นิ้ว Full HD 165Hz</option><option>24 นิ้ว Full HD 240Hz</option><option>27 นิ้ว 2K 165Hz</option><option>27 นิ้ว 2K 240Hz</option>
+                                <option>27 นิ้ว 4K UHD</option><option>32 นิ้ว 4K UHD</option><option>32 นิ้ว 4K 144Hz</option><option>34 นิ้ว Ultrawide</option><option>49 นิ้ว Super Ultrawide</option>
+                            </select>
+                        </div>
+
+                        <!-- ระบบปฏิบัติการ -->
+                        <div class="spec-item"><label data-key="spec_os">🪟 ระบบปฏิบัติการ</label>
+                            <select name="os">
+                                <option value="ไม่มี">ไม่มี</option><option>Windows 11 Home (ลิขสิทธิ์แท้)</option><option>Windows 11 Pro (ลิขสิทธิ์แท้)</option>
+                                <option>Windows 10 Home (ลิขสิทธิ์แท้)</option><option>Windows 10 Pro (ลิขสิทธิ์แท้)</option>
+                            </select>
+                        </div>
+
+                        <!-- Office -->
+                        <div class="spec-item"><label data-key="spec_office">📊 ชุดโปรแกรม Office</label>
+                            <select name="office">
+                                <option value="ไม่มี">ไม่มี</option><option>Microsoft Office Home & Student 2021</option><option>Microsoft Office Home & Business 2021</option>
+                                <option>Microsoft 365 Personal (1 ปี)</option><option>Microsoft 365 Family (1 ปี)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- เขียนสเปคเอง -->
+                    <div class="custom-spec">
+                        <label style="font-weight:700;" data-key="spec_custom_title">✏️ เขียนสเปคเอง (กรุณาระบุรายละเอียด)</label>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 10px; margin: 15px 0;">
+                            <input type="text" name="custom_cpu" placeholder="CPU ที่ต้องการ" data-key-placeholder="custom_cpu_ph">
+                            <input type="text" name="custom_ram" placeholder="RAM ที่ต้องการ" data-key-placeholder="custom_ram_ph">
+                            <input type="text" name="custom_storage" placeholder="Storage ที่ต้องการ" data-key-placeholder="custom_storage_ph">
+                            <input type="text" name="custom_gpu" placeholder="GPU ที่ต้องการ" data-key-placeholder="custom_gpu_ph">
+                            <input type="text" name="custom_motherboard" placeholder="เมนบอร์ดที่ต้องการ" data-key-placeholder="custom_mb_ph">
+                            <input type="text" name="custom_psu" placeholder="PSU ที่ต้องการ" data-key-placeholder="custom_psu_ph">
+                            <input type="text" name="custom_case" placeholder="เคสที่ต้องการ" data-key-placeholder="custom_case_ph">
+                            <input type="text" name="custom_monitor" placeholder="จอภาพที่ต้องการ" data-key-placeholder="custom_monitor_ph">
+                        </div>
+                        <textarea name="custom_spec_full" rows="3" placeholder="หรือเขียนสเปคเต็มๆ ทั้งชุด เช่น : CPU i7-14700K, RAM 32GB DDR5 6000MHz, SSD 2TB, GPU RTX 4080 SUPER, เมนบอร์ด ASUS Z790, PSU 850W Gold, เคสเกมมิ่ง, Windows 11 Pro" data-key-placeholder="custom_full_ph"></textarea>
+                    </div>
+
+                    <!-- ข้อมูลผู้ติดต่อ -->
+                    <div class="spec-grid" style="margin-top: 20px;">
+                        <div class="spec-item"><label data-key="form_name">👤 ชื่อ-นามสกุล</label><input type="text" name="name" required></div>
+                        <div class="spec-item"><label data-key="form_phone">📞 เบอร์โทรศัพท์</label><input type="tel" name="phone" required></div>
+                        <div class="spec-item"><label data-key="form_email">📧 อีเมล</label><input type="email" name="email" required></div>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary" style="width:100%; justify-content:center; margin-top: 20px;"><i class="fas fa-paper-plane"></i> <span data-key="spec_submit">ส่งขอใบเสนอราคา</span></button>
+                    <p id="specFormStatus" style="margin-top: 15px; text-align:center;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- สินค้าอุปกรณ์ -->
+    <section id="products">
+        <div class="container">
+            <h2 class="section-title" data-key="products_title">🖥️ อุปกรณ์คอมพิวเตอร์และต่อพ่วง</h2>
+            <p class="section-sub" data-key="products_sub">จำหน่ายส่ง-ปลาย ราคามิตรภาพ</p>
+            <div class="products-grid">
+                <div class="product-card"><i class="fas fa-tv product-icon"></i><h3 data-key="product_monitor">จอภาพ</h3><p>Full HD, 4K, IPS, Curved</p></div>
+                <div class="product-card"><i class="fas fa-microchip product-icon"></i><h3 data-key="product_ram">หน่วยความจำ</h3><p>DDR4, DDR5</p></div>
+                <div class="product-card"><i class="fas fa-keyboard product-icon"></i><h3 data-key="product_peripheral">อุปกรณ์ต่อพ่วง</h3><p>เมาส์ คีย์บอร์ด หูฟัง</p></div>
+                <div class="product-card"><i class="fas fa-database product-icon"></i><h3 data-key="product_software">ซอฟต์แวร์ลิขสิทธิ์</h3><p>Windows, Office</p></div>
+                <div class="product-card"><i class="fas fa-hdd product-icon"></i><h3 data-key="product_ssd">SSD / HDD</h3><p>ความจุสูง อ่านเร็ว</p></div>
+                <div class="product-card"><i class="fas fa-network-wired product-icon"></i><h3 data-key="product_network">อุปกรณ์เครือข่าย</h3><p>Router, Switch</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Share Buttons -->
+    <div class="container share-section">
+        <div class="share-buttons">
+            <a href="https://line.me/R/ti/p/@AKprofessional" class="share-btn line" target="_blank"><i class="fab fa-line"></i> <span data-key="share_line">แชร์ Line</span></a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://akprofessional.com" class="share-btn facebook" target="_blank"><i class="fab fa-facebook-f"></i> <span data-key="share_fb">แชร์ Facebook</span></a>
+        </div>
+    </div>
+
+    <!-- ติดต่อ -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title" data-key="contact_title">📞 ช่องทางติดต่อ</h2>
+            <p class="section-sub" data-key="contact_sub">แจ้งความต้องการได้เลย เราพร้อมให้บริการ</p>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3 data-key="contact_info_title">🏢 ข้อมูลติดต่อ</h3>
+                    <p><i class="fas fa-map-pin"></i> 8MR6+QC8, ต.อุทัย, อ.อุทัย, จ.พระนครศรีอยุธยา 13210</p>
+                    <p><i class="fas fa-phone-alt"></i> <strong>086 314 1312</strong></p>
+                    <p><i class="fas fa-envelope"></i> akprofessional.ak@gmail.com</p>
+                    <div style="display: flex; gap: 10px; margin: 20px 0;">
+                        <a href="https://line.me/R/ti/p/@AKprofessional" class="social-btn line-btn" target="_blank"><i class="fab fa-line"></i> Line</a>
+                        <a href="https://m.me/100066306563627" class="social-btn msg-btn" target="_blank"><i class="fab fa-facebook-messenger"></i> Messenger</a>
+                        <a href="tel:0863141312" class="social-btn phone-btn"><i class="fas fa-phone"></i> โทรเลย</a>
+                    </div>
+                    <div style="border-radius: 1rem; overflow: hidden;">
+                        <iframe src="https://maps.google.com/maps?q=8MR6%2BQC8+%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%B1%E0%B8%A2+%E0%B8%AD%E0%B8%A2%E0%B8%B8%E0%B8%98%E0%B8%A2%E0%B8%B2&z=16&output=embed" width="100%" height="200" style="border:0;" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3 data-key="form_title">✉️ ส่งข้อความสอบถาม</h3>
+                    <form action="https://formspree.io/f/YOUR_ENDPOINT" method="POST" id="contactForm">
+                        <input type="text" name="name" placeholder="ชื่อ-นามสกุล" data-key-placeholder="form_name" required style="width:100%; padding:12px; margin-bottom:12px; border-radius:12px; border:1px solid var(--gray-200);">
+                        <input type="email" name="email" placeholder="อีเมล" data-key-placeholder="form_email" required style="width:100%; padding:12px; margin-bottom:12px; border-radius:12px; border:1px solid var(--gray-200);">
+                        <input type="tel" name="phone" placeholder="เบอร์โทรศัพท์" data-key-placeholder="form_phone" style="width:100%; padding:12px; margin-bottom:12px; border-radius:12px; border:1px solid var(--gray-200);">
+                        <textarea name="message" rows="4" placeholder="ข้อความ..." data-key-placeholder="form_message" required style="width:100%; padding:12px; margin-bottom:12px; border-radius:12px; border:1px solid var(--gray-200);"></textarea>
+                        <button type="submit" class="btn-primary" style="width:100%; justify-content:center;" data-key="form_submit">ส่งข้อความ</button>
+                        <p id="formStatus" style="margin-top:10px; font-size:0.8rem; text-align:center;"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p data-key="footer_text">รับติดตั้งพัดลม งานระบบไฟ ห้องคอมพิวเตอร์ จัดส่งอุปกรณ์ให้โรงเรียน พร้อมขายส่งคอมพิวเตอร์ และบริการเลือกสเปคคอมพิวเตอร์ครบทุกชิ้นส่วน CPU Intel/AMD ทุกรุ่น 2022-2026 และ GPU NVIDIA/AMD ครบทุกซีรี่ส์</p>
+        <p style="margin-top: 1rem; opacity: 0.7;">© 2026 AK Professional Service | ทีมงานมืออาชีพ ราคามิตรภาพ</p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 800, once: true });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const target = this.getAttribute('href');
+            if (target === "#" || target === "") return;
+            const el = document.querySelector(target);
+            if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
+        });
+    });
+
+    // ==================== ระบบภาษา ====================
+    const translations = {
+        th: {
+            company_name: "บจก.เอเค โปรเฟสชั่นแนล", company_sub: "AK Professional Service Co., Ltd.",
+            nav_home: "หน้าแรก", nav_services: "บริการ", nav_pcset: "คอมเซ็ต", nav_spec: "เลือกสเปค", nav_contact: "ติดต่อ", nav_quote: "ขอใบเสนอราคา",
+            hero_badge: "✨ ครบวงจร มาตรฐาน", hero_title_1: "จำหน่าย", hero_title_2: "ซ่อม คอมพิวเตอร์ โน๊ตบุ๊ค ปริ้นเตอร์,อุปกรณ์ IT ,อุปกรณ์ต่อพ่วง ", hero_title_4: "",
+            hero_desc: "เราครอบคลุมทุกความต้องการ ตั้งแต่ขายส่งอุปกรณ์คอมพิวเตอร์รับเดินระบบเน็ตเวิร์ค ติดตั้งกล้องวงจรปิด ",
+            hero_btn_spec: "เลือกสเปคคอม", hero_btn_services: "บริการทั้งหมด",
+            services_title: "⚙️ บริการของเรา", services_sub: "ติดตั้ง-ออกแบบ-จัดส่ง ครบจบในที่เดียว",
+            service_fan: "ติดตั้งพัดลม", service_fan_desc: "พัดลมติดเพดาน พัดลมติดพนัง พัดลมดูดอากาศ สำหรับบ้าน สำนักงาน โรงเรียน",
+            service_electrical: "งานระบบไฟ", service_electrical_desc: "เดินสายไฟ เปลี่ยนโคมไฟ ระบบไฟฟ้าแสงสว่าง ปลอดภัย มอก.",
+            service_computer: "งานห้องคอมพิวเตอร์", service_computer_desc: "ออกแบบ จัดวาง ติดตั้งระบบเครือข่าย เดินสายแลน",
+            service_school: "จัดส่งให้โรงเรียน", service_school_desc: "ส่งตรงถึงมือครูและนักเรียน อุปกรณ์คอมพิวเตอร์ จอภาพ พัดลม",
+            pcset_title: "🖥️ คอมเซ็ตแนะนำ", pcset_sub: "เซ็ตคอมพิวเตอร์พร้อมใช้งาน ราคาพิเศษ",
+            pcset1: "คอมเซ็ต All-in-One", pcset1_desc: "จอภาพในตัว ประหยัดพื้นที่",
+            pcset2: "โน้ตบุ๊ก HP", pcset2_desc: "ประสิทธิภาพสูง พกพาสะดวก",
+            pcset3: "คอมเซ็ตสำหรับโรงเรียน", pcset3_desc: "ครบชุด พร้อมซอฟต์แวร์ลิขสิทธิ์",
+            spec_title: "⚙️ เลือกสเปคคอมพิวเตอร์ (ครบทุกชิ้นส่วน)", spec_sub: "เลือกสเปคตามรุ่นจริง หรือเขียนสเปคเอง แล้วเราจะเสนอราคาให้ภายใน 24 ชม.",
+            spec_cpu: "🧠 CPU (โปรเซสเซอร์)", spec_ram: "💾 RAM (หน่วยความจำ)", spec_storage: "💽 SSD / HDD", spec_gpu: "🎮 กราฟิกการ์ด (GPU)", spec_motherboard: "🔧 เมนบอร์ด", spec_psu: "🔌 พาวเวอร์ซัพพลาย", spec_case: "🖥️ เคสคอมพิวเตอร์", spec_cooler: "❄️ ระบบระบายความร้อน", spec_monitor: "🖥️ จอภาพ", spec_os: "🪟 ระบบปฏิบัติการ", spec_office: "📊 ชุดโปรแกรม Office", spec_custom_title: "✏️ เขียนสเปคเอง (กรุณาระบุรายละเอียด)", spec_submit: "ส่งขอใบเสนอราคา",
+            products_title: "🖥️ อุปกรณ์คอมพิวเตอร์และต่อพ่วง", products_sub: "จำหน่ายส่ง-ปลาย ราคามิตรภาพ",
+            product_monitor: "จอภาพ", product_ram: "หน่วยความจำ", product_peripheral: "อุปกรณ์ต่อพ่วง", product_software: "ซอฟต์แวร์ลิขสิทธิ์", product_ssd: "SSD / HDD", product_network: "อุปกรณ์เครือข่าย",
+            share_line: "แชร์ Line", share_fb: "แชร์ Facebook",
+            contact_title: "📞 ช่องทางติดต่อ", contact_sub: "แจ้งความต้องการได้เลย เราพร้อมให้บริการ", contact_info_title: "🏢 ข้อมูลติดต่อ",
+            form_title: "✉️ ส่งข้อความสอบถาม", form_name: "ชื่อ-นามสกุล", form_email: "อีเมล", form_phone: "เบอร์โทรศัพท์", form_message: "ข้อความ...", form_submit: "ส่งข้อความ",
+            footer_text: "จำหน่าย และ ซ่อม คอมพิวเตอร์,โน๊ตบุ๊ค,ปริ้นเตอร์,อุปกรณ์ IT ,อุปกรณ์ต่อพ่วง // รับเดินระบบเน็ตเวิร์ค ติดตั้งกล้องวงจรปิด"
+        },
+        en: {
+            company_name: "AK Professional Service", company_sub: "AK Professional Service Co., Ltd.",
+            nav_home: "Home", nav_services: "Services", nav_pcset: "PC Sets", nav_spec: "Custom Spec", nav_contact: "Contact", nav_quote: "Get Quote",
+            hero_badge: "✨ Complete Professional Solutions", hero_title_1: "Fan Installation", hero_title_2: "Electrical ", hero_title_3: "& IT Room", hero_title_4: "Plus School Delivery",
+            hero_desc: "Complete IT solutions from computer wholesale to custom PC specification service with full components, Intel/AMD CPUs 2022-2026 and NVIDIA/AMD GPUs.",
+            hero_btn_spec: "Custom PC Spec", hero_btn_services: "All Services",
+            services_title: "⚙️ Our Services", services_sub: "Installation - Design - Delivery",
+            service_fan: "Fan Installation", service_fan_desc: "Ceiling fans, exhaust fans for home, office, school",
+            service_electrical: "Electrical Systems", service_electrical_desc: "Wiring, lighting, consumer units, TIS standard",
+            service_computer: "Computer Room Setup", service_computer_desc: "Design, network installation, LAN cabling",
+            service_school: "School Delivery", service_school_desc: "Direct delivery to teachers & students",
+            pcset_title: "🖥️ Recommended PC Sets", pcset_sub: "Ready-to-use PC sets at special prices",
+            pcset1: "All-in-One PC Set", pcset1_desc: "Space-saving design",
+            pcset2: "HP Notebook", pcset2_desc: "High performance, portable",
+            pcset3: "School PC Set", pcset3_desc: "Complete with licensed software",
+            spec_title: "⚙️ Customize Your PC (Full Components)", spec_sub: "Select real models or write your own spec, we'll quote within 24h.",
+            spec_cpu: "🧠 CPU", spec_ram: "💾 RAM", spec_storage: "💽 SSD / HDD", spec_gpu: "🎮 Graphics Card (GPU)", spec_motherboard: "🔧 Motherboard", spec_psu: "🔌 Power Supply", spec_case: "🖥️ Computer Case", spec_cooler: "❄️ Cooling System", spec_monitor: "🖥️ Monitor", spec_os: "🪟 Operating System", spec_office: "📊 Microsoft Office", spec_custom_title: "✏️ Write your own spec", spec_submit: "Request Quote",
+            products_title: "🖥️ Computers & Peripherals", products_sub: "Wholesale & retail, friendly prices",
+            product_monitor: "Monitors", product_ram: "Memory", product_peripheral: "Peripherals", product_software: "Software", product_ssd: "SSD / HDD", product_network: "Networking",
+            share_line: "Share Line", share_fb: "Share Facebook",
+            contact_title: "📞 Contact Us", contact_sub: "Tell us your needs", contact_info_title: "🏢 Contact Info",
+            form_title: "✉️ Send a message", form_name: "Full Name", form_email: "Email", form_phone: "Phone", form_message: "Message...", form_submit: "Send Message",
+            footer_text: "Fan installation, Electrical systems, Computer room setup, School delivery, Computer wholesale & custom PC service with full components, Intel/AMD CPUs 2022-2026 and NVIDIA/AMD GPUs"
+        }
+    };
+
+    let currentLang = 'th';
+    function applyLanguage(lang) {
+        const t = translations[lang];
+        document.querySelectorAll('[data-key]').forEach(el => {
+            const key = el.getAttribute('data-key');
+            if (t[key]) el.innerText = t[key];
+        });
+        document.querySelectorAll('[data-key-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-key-placeholder');
+            if (t[key]) el.placeholder = t[key];
+        });
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+        });
+        currentLang = lang;
+    }
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => applyLanguage(btn.getAttribute('data-lang')));
+    });
+    applyLanguage('th');
+
+    // Formspree handlers (เปลี่ยน YOUR_ENDPOINT เป็นลิงก์จริงจาก formspree.io)
+    const specForm = document.getElementById('specForm');
+    if (specForm) {
+        specForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const status = document.getElementById('specFormStatus');
+            status.innerText = currentLang === 'th' ? "📨 กำลังส่งสเปค..." : "📨 Sending spec...";
+            try {
+                const res = await fetch(specForm.action, { method: 'POST', body: new FormData(specForm), headers: { 'Accept': 'application/json' } });
+                if (res.ok) {
+                    status.innerText = currentLang === 'th' ? "✅ ส่งสเปคสำเร็จ! ทีมงานจะติดต่อกลับพร้อมราคา" : "✅ Spec sent! We'll quote you soon.";
+                    specForm.reset();
+                } else {
+                    status.innerText = currentLang === 'th' ? "❌ เกิดข้อผิดพลาด กรุณาลองใหม่" : "❌ Error, please try again.";
+                }
+            } catch {
+                status.innerText = currentLang === 'th' ? "❌ เชื่อมต่อล้มเหลว" : "❌ Connection failed.";
+            }
+        });
+    }
+
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const status = document.getElementById('formStatus');
+            status.innerText = currentLang === 'th' ? "📨 กำลังส่ง..." : "📨 Sending...";
+            try {
+                const res = await fetch(contactForm.action, { method: 'POST', body: new FormData(contactForm), headers: { 'Accept': 'application/json' } });
+                if (res.ok) {
+                    status.innerText = currentLang === 'th' ? "✅ ส่งสำเร็จ! ทีมงานจะติดต่อกลับ" : "✅ Sent! We'll contact you soon.";
+                    contactForm.reset();
+                } else {
+                    status.innerText = currentLang === 'th' ? "❌ เกิดข้อผิดพลาด" : "❌ Error";
+                }
+            } catch {
+                status.innerText = currentLang === 'th' ? "❌ เชื่อมต่อล้มเหลว" : "❌ Connection failed.";
+            }
+        });
+    }
+</script>
+</body>
+</html>
